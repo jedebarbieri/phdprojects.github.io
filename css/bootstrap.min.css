@@ -7387,6 +7387,10 @@ fieldset:disabled .btn {
     max-width: 100% !important
 }
 
+.mw-85 {
+    max-width: 85% !important
+}
+
 .vw-100 {
     width: 100vw !important
 }
