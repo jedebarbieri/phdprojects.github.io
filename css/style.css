@@ -1,9 +1,15 @@
 /********** Template CSS **********/
 :root {
-    --primary: #06A3DA;
-    --secondary: #34AD54;
+    --primary: #1e4164;
+    --secondary: #3c6487;
     --light: #EEF9FF;
     --dark: #091E3E;
+    --action: #d6751a;
+
+    /* Reemplazando vars de Bootstrap */
+    --bs-primary: var(--primary);
+    --bs-secondary: var(--secondary);
+    --bs-dark: var(--dark);
 }
 
 
@@ -73,6 +79,10 @@ h6,
 
 
 /*** Navbar ***/
+.navbar {
+    background-color: var(--dark) + '00';
+}
+
 .navbar-dark .navbar-nav .nav-link {
     font-family: 'Nunito', sans-serif;
     position: relative;
@@ -95,6 +105,10 @@ h6,
     color: var(--primary);
 }
 
+.navbar-brand {
+    margin-right: 0px;
+}
+
 .navbar-dark .navbar-brand h1 {
     color: #FFFFFF;
 }
@@ -105,6 +119,11 @@ h6,
 }
 
 @media (max-width: 991.98px) {
+
+    .navbar {
+        background-color: var(--dark);
+    }
+
     .sticky-top.navbar-dark {
         position: relative;
         background: #FFFFFF;
@@ -128,7 +147,6 @@ h6,
         width: 100%;
         top: 0;
         left: 0;
-        border-bottom: 1px solid rgba(256, 256, 256, .1);
         z-index: 999;
     }
     
