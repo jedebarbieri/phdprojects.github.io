@@ -194,8 +194,19 @@ h6,
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(9, 30, 62, .7);
     z-index: 1;
+}
+.carousel-caption::before {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    content: " ";
+    background: rgba(9, 30, 62, .5);
+}
+.carousel-caption.no-layer::before {
+    background-color: transparent;
 }
 
 @media (max-width: 576px) {
